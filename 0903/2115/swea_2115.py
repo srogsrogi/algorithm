@@ -21,13 +21,19 @@ T = int(input())
 for tc in range(1, T+1):
     N, M, C = map(int, input().split())
     arr = [list(map(int, input().split())) for _ in range(N)]
-
-    for r1 in range(N-M+1):
-        for c1 in range(N):
-            for r2 in range(r1, )
-
-
-
+    
+    # r1, c1, r2, c2 : 일꾼 1과 2의 행/열 시작인덱스
+    # 일꾼 1 꿀통 순회
+    for r1 in range(N):
+        for c1 in range(N-M+1):
+            # 일꾼 2 꿀통 순회
+            for r2 in range(N):
+                for c2 in range(N-M+1):
+                    # 꿀통끼리 겹치면 스킵
+                    if r1 == r2:
+                        if c1 + M >= c2 or c2 + M >= c1:
+                            continue
+                    
 
 
     # print(f'#{tc} {result}')
