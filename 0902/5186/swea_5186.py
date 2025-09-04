@@ -10,7 +10,7 @@ for tc in range(1, T+1):
     binary = []
 
     # 14부터는 overflow로 처리할 거니까 14번 루프
-    for i in range(14):
+    for i in range(14):ㅊ
         # 매 루프 남아있는 부분(소수부)에 2를 곱해서 1보다 크면 그 때 비트는 1, 아니면 0
         n *= 2
         bit = int(n)
